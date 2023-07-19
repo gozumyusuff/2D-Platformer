@@ -72,6 +72,17 @@ public class PlayerMovement : MonoBehaviour
         anim.SetInteger("state", (int)state);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Tramboline"))
+        {
+            if (rb != null)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, jumpForce * 1.5f);
+            }
+        }
+    }
+
     private bool IsGrounded()
     {
         return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
