@@ -79,6 +79,7 @@ public class PlayerMovement : MonoBehaviour
             if (rb != null)
             {
                 rb.velocity = new Vector2(rb.velocity.x, jumpForce * 1.5f);
+                jumpSoundEffect.Play();
             }
         }
     }
