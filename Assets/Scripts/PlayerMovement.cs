@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator anim;
 
+    public ParticleSystem dust;
+
     [SerializeField] private LayerMask jumpableGround;
 
     private float dirX = 0;
@@ -32,8 +34,10 @@ public class PlayerMovement : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);
 
+
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
+            CreateDust();
            jumpSoundEffect.Play();
            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
@@ -82,6 +86,11 @@ public class PlayerMovement : MonoBehaviour
                 jumpSoundEffect.Play();
             }
         }
+    }
+
+    private void CreateDust()
+    {
+        dust.Play();
     }
 
     private bool IsGrounded()
