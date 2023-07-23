@@ -630,7 +630,6 @@ GameObject:
   - component: {fileID: 660961603}
   - component: {fileID: 660961607}
   - component: {fileID: 660961605}
-  - component: {fileID: 660961606}
   m_Layer: 6
   m_Name: Terrain
   m_TagString: Untagged
@@ -2834,20 +2833,6 @@ PlatformEffector2D:
   m_UseSideFriction: 0
   m_UseSideBounce: 0
   m_SideArc: 1
---- !u!114 &660961606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 660961598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8df23b8b4cbd704783324bf0c076099, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: []
-  speed: 2
 --- !u!66 &660961607
 CompositeCollider2D:
   m_ObjectHideFlags: 0
@@ -74976,6 +74961,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 971862113, guid: c116879bd8e2346479a4eebc55134c92, type: 3}
+      propertyPath: m_Size.y
+      value: 1.6819779
+      objectReference: {fileID: 0}
+    - target: {fileID: 971862113, guid: c116879bd8e2346479a4eebc55134c92, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.20629448
+      objectReference: {fileID: 0}
     - target: {fileID: 6224350140160487237, guid: c116879bd8e2346479a4eebc55134c92, type: 3}
       propertyPath: melonsText
       value: 

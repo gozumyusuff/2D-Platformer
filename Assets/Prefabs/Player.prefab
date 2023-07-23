@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6224350140160487235}
   - component: {fileID: 6224350140160487233}
   - component: {fileID: 6224350140160487232}
-  - component: {fileID: 6224350138789524984}
+  - component: {fileID: 971862113}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -391,7 +391,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.0000001
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -467,7 +467,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!70 &6224350138789524984
+--- !u!70 &971862113
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -480,8 +480,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.09298253, y: -0.17268187}
-  m_Size: {x: 1.4952374, y: 1.6546363}
+  m_Offset: {x: -0.01588279, y: -0.14426374}
+  m_Size: {x: 1.2376233, y: 1.5579164}
   m_Direction: 0
 --- !u!1001 &7136216610782290024
 PrefabInstance:
